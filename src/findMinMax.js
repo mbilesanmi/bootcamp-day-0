@@ -10,10 +10,12 @@ function findMinMax(arr){
         if (arr[i] < min) {
             min = arr[i];
         }
+
         if (arr[i] > max) {
             max = arr[i];
         }
         minMax = [min, max];
+
         if ((arr[i] == min) && (arr[i] == max)) {
             minmax = arr[i];
             minMax = [minmax];
@@ -21,7 +23,4 @@ function findMinMax(arr){
     }
 
     return minMax;
-    // console.log(max);
-    // console.log(min);
-    // console.log(total/myArray.length);
 }
